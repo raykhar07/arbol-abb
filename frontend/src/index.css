@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+/* Modo oscuro controlado por la clase .dark en <html>. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Barra de scroll discreta en ambos temas. */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #6b7280 transparent;
+}
