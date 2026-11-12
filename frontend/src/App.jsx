@@ -179,7 +179,7 @@ export default function App() {
       <main className="flex min-w-0 flex-1 flex-col gap-4 overflow-hidden p-5">
         {/* Fila 0: busqueda y orden */}
         <div className="flex flex-wrap items-center gap-2">
-          <div className="max-w-md min-w-[220px] flex-1">
+          <div className="max-w-md min-w-55 flex-1">
             <input
               value={texto}
               onChange={(evento) => setTexto(evento.target.value)}
@@ -257,7 +257,7 @@ export default function App() {
           <select
             value={etiqueta}
             onChange={(evento) => setEtiqueta(evento.target.value)}
-            className={`${ESTILO_SELECT} min-w-[170px]`}
+            className={`${ESTILO_SELECT} min-w-42.5`}
           >
             <option value="">Etiqueta...</option>
             {etiquetas.map((tag) => (
